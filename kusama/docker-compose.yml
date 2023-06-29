@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   polkadot:
-    container_name: polkadot
+    container_name: kusama
     image: parity/polkadot
     ports:
       - 30333:30333 # p2p port
@@ -11,8 +11,8 @@ services:
     volumes:
       -  ${APP_DATA_DIR}:/polkadot
     command: [
-      "--name", "Polkadot",
-      "--chain", "Kusama",
+      "--name", "Kusama",
+      "--chain", "kusama",
       "--unsafe-rpc-external",
       "--rpc-cors", "all",
       "--prometheus-external"
