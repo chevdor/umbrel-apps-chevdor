@@ -1,0 +1,1 @@
+export APP_KUSAMA_NODE_IP="10.177.0.2"
