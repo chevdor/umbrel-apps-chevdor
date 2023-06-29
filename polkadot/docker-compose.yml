@@ -22,4 +22,4 @@ services:
     environment:
       - WS_URL=ws://polkadot:9944
     ports:
-      - 80:80
+      - 17080:80
