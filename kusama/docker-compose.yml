@@ -12,9 +12,9 @@ services:
       - ${APP_DATA_DIR}:/polkadot
     command: [
       "--name", "Kusama",
-      "--chain", "kusama",
+      "--chain", "${APP_KUSAMA_CHAIN}",
       "--unsafe-rpc-external",
       "--rpc-cors", "all",
       "--prometheus-external",
-      "--prometheus-port", "APP_KUSAMA_PORT_PROMETHEUS"
+      "--prometheus-port", "${APP_KUSAMA_PORT_PROMETHEUS}"
     ]

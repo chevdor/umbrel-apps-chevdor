@@ -12,9 +12,9 @@ services:
       -  ${APP_DATA_DIR}:/polkadot
     command: [
       "--name", "Polkadot",
-      "--chain", "polkadot",
+      "--chain", "${APP_POLKADOT_CHAIN}",
       "--unsafe-rpc-external",
       "--rpc-cors", "all",
       "--prometheus-external",
-      "--prometheus-port", "APP_POLKADOT_PORT_PROMETHEUS"
+      "--prometheus-port", "${APP_POLKADOT_PORT_PROMETHEUS}"
     ]
