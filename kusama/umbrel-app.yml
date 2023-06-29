@@ -5,7 +5,7 @@ tagline: Your very own Kusama node
 icon: https://raw.githubusercontent.com/w3f/polkadot-wiki/master/kusama-guide/static/img/Kusama_Canary_white.png
 category: Blockchain
 version: "0.0.1"
-# port:
+port: 17080
 description: >-
   This is your very own Kusama node.
 
