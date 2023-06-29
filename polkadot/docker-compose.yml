@@ -1,6 +1,12 @@
 version: "3.7"
 
 services:
+  app_proxy:
+    environment:
+      APP_HOST: $APP_POLKADOT_NODE_IP
+      APP_PORT: 17080
+      PROXY_AUTH_WHITELIST: "/api/*"
+
   polkadot:
     container_name: polkadot
     image: parity/polkadot
@@ -15,10 +21,10 @@ services:
       "--unsafe-rpc-external",
       "--rpc-cors", "all"
     ]
-  polkadotui:
+  polkadotjs:
     container_name: polkadotjs
     image: jacogr/polkadot-js-apps
     environment:
-      - WS_URL=ws://polkadot:9944
+      - WS_URL=ws://$APP_POLKADOT_NODE_IP:9944
     ports:
       - 17080:80

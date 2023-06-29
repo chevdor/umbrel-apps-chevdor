@@ -1,0 +1,1 @@
+export APP_POLKADOT_NODE_IP="10.177.0.1"
