@@ -11,10 +11,11 @@ services:
     volumes:
       - ${APP_DATA_DIR}:/polkadot
     command: [
-      "--name", "Kusama",
       "--chain", "${APP_KUSAMA_CHAIN}",
       "--unsafe-rpc-external",
       "--rpc-cors", "all",
       "--prometheus-external",
+      "--database", "auto",
+      "--sync", "warp",
       "--prometheus-port", "${APP_KUSAMA_PORT_PROMETHEUS}"
     ]

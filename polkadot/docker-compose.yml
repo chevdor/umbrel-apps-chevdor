@@ -11,10 +11,11 @@ services:
     volumes:
       -  ${APP_DATA_DIR}:/polkadot
     command: [
-      "--name", "Polkadot",
       "--chain", "${APP_POLKADOT_CHAIN}",
       "--unsafe-rpc-external",
       "--rpc-cors", "all",
       "--prometheus-external",
+      "--database", "auto",
+      "--sync", "warp",
       "--prometheus-port", "${APP_POLKADOT_PORT_PROMETHEUS}"
     ]
