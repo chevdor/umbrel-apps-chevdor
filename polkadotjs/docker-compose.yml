@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: $APP_POLKADOT_NODE_IP
+      APP_HOST: $APP_POLKADOT_UI_IP
       APP_PORT: 17080
       PROXY_AUTH_WHITELIST: "/api/*"
 
