@@ -12,8 +12,7 @@ services:
       -  ${APP_DATA_DIR}:/polkadot
     command: [
       "--name", "Polkadot",
-      "--ws-external",
-      "--rpc-external",
+      "--unsafe-rpc-external",
       "--rpc-cors", "all"
     ]
   polkadotui:
