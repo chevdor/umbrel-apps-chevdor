@@ -15,5 +15,6 @@ services:
       "--chain", "polkadot",
       "--unsafe-rpc-external",
       "--rpc-cors", "all",
-      "--prometheus-external"
+      "--prometheus-external",
+      "--prometheus-port", "APP_POLKADOT_PORT_PROMETHEUS"
     ]

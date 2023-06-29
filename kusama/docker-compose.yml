@@ -15,5 +15,6 @@ services:
       "--chain", "kusama",
       "--unsafe-rpc-external",
       "--rpc-cors", "all",
-      "--prometheus-external"
+      "--prometheus-external",
+      "--prometheus-port", "APP_KUSAMA_PORT_PROMETHEUS"
     ]
