@@ -13,4 +13,4 @@ services:
     environment:
       - WS_URL=ws://$APP_POLKADOT_NODE_IP:9944
     ports:
-      - 17080:80
+      - 80:80
