@@ -20,7 +20,7 @@ services:
       "--prometheus-port", "${APP_KUSAMA_PORT_PROMETHEUS}"
     ]
   polkadotjs:
-    container_name: polkadotjs
+    container_name: polkadotjs-kusama
     image: jacogr/polkadot-js-apps
     environment:
       - WS_URL=ws://$APP_POLKADOT_NODE_IP:9944
