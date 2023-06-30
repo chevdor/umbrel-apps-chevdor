@@ -1,11 +1,11 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: $APP_POLKADOT_UI_IP
-      APP_PORT: 17080
-      PROXY_AUTH_WHITELIST: "/api/*"
+  # app_proxy:
+  #   environment:
+  #     APP_HOST: polkadotjs_polkadotjs_1
+  #     APP_PORT: 17081
+  #     PROXY_AUTH_WHITELIST: "/api/*"
 
   polkadotjs:
     container_name: polkadotjs
