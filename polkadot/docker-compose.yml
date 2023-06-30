@@ -19,7 +19,7 @@ services:
       "--sync", "warp",
       "--prometheus-port", "${APP_POLKADOT_PORT_PROMETHEUS}"
     ]
-  polkadotjs:
+  node-explorer:
     container_name: polkadot-nodex
     image: wirednkod13/polkadot-node-explorer
     environment:
