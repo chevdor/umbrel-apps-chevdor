@@ -2,7 +2,7 @@ manifestVersion: 1
 id: polkadotjs
 name: PolkadotJS
 tagline: Your very own PolkadotJS to interact with Polkadot and Kusama nodes
-icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/icons/icon.png
+icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/icons/icon.svg
 category: Polkadot
 version: "0.0.2"
 port: 17080
