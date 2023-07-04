@@ -13,6 +13,7 @@ submitter: Chevdor
 submission: https://github.com/chevdor/umbrel-apps-chevdor
 repo: https://github.com/chevdor/umbrel-apps-chevdor
 support: https://github.com/chevdor/umbrel-apps-chevdor/issues
+port: 30011
 gallery:
   - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-delegation/screenshots/delegation.png
   - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-delegation/screenshots/page2.png

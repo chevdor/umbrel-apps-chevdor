@@ -1,6 +1,11 @@
 version: "3.7"
 
 services:
-  gov-dashboard:
-    container_name: polkadot-governance-dashboard
-    image: nginx
+  app_proxy:
+    environment:
+      APP_HOST: polkadot-delegation-dashboard
+      APP_PORT: 80
+
+  delegation-dashboard:
+    container_name: polkadot-delegation-dashboard
+    image: docker.io/chevdor/polkadot-delegation-dashboard
