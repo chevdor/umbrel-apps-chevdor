@@ -20,6 +20,7 @@ repo: https://github.com/chevdor/umbrel-apps-chevdor
 support: https://github.com/chevdor/umbrel-apps-chevdor/issues
 gallery:
   - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/kusama/screenshots/kusama.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-node-explorer/screenshots/kusama.png
 releaseNotes: >-
   This version adds icons and screenshots.
 dependencies: []
