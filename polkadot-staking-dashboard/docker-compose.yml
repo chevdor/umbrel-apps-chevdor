@@ -10,5 +10,5 @@ services:
   staking-dashboard:
     container_name: polkadot-staking-dashboard
     image: docker.io/chevdor/polkadot-staking-dashboard
-    ports:
-        - 30010:80
+    # ports:
+    #     - 30010:80

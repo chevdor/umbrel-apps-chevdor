@@ -10,7 +10,10 @@ services:
   polkadotjs:
     container_name: polkadotjs
     image: jacogr/polkadot-js-apps
-    environment:
-      - WS_URL=ws://$APP_POLKADOT_NODE_IP:9944
+    # Commented out because we don't enforce running a node, so
+    # if the user only installs PolkadotJS, it will not connect
+    # out of the box
+    # environment:
+    #   - WS_URL=ws://$APP_POLKADOT_NODE_IP:9944
     ports:
       - 17080:80
