@@ -2,14 +2,16 @@ manifestVersion: 1
 id: polkadotjs
 name: PolkadotJS
 tagline: Your very own PolkadotJS to interact with Polkadot and Kusama nodes
-icon: https://polkadot.js.org/logo.svg
+icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/icons/icon.png
 category: Blockchain
-version: "0.0.1"
+version: "0.0.2"
 port: 17080
 description: >-
-  This is your very own PolkadotJS.
+  Polkadot JS Apps is a set of tools allowing interacting with a Polkadot/Kusama/Substrate node.
+  It offers an integrated wallet and support external wallets such as the PolkadotJS Extension, Ledger Wallet,
+  Talisman, etc...
 
-  Less Trust / More Truth !
+  Installing this App allows you running your own instance of the website.
 
 developer: Chevdor
 website: https://chevdor.com
@@ -18,9 +20,12 @@ submission: https://github.com/chevdor/umbrel-apps-chevdor
 repo: https://github.com/chevdor/umbrel-apps-chevdor
 support: https://github.com/chevdor/umbrel-apps-chevdor/issues
 gallery:
-  - https://polkadot.js.org/logo.svg
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/screenshots/polkadot.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/screenshots/kusama.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/screenshots/statemine.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/screenshots/statemint.png
 releaseNotes: >-
-  First experimental version
+  Add icons and screenshots.
 dependencies: []
 path: ""
 defaultUsername: ""
