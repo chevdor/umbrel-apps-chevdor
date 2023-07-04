@@ -1,6 +1,11 @@
 version: "3.7"
 
 services:
+  app_proxy:
+    environment:
+      APP_HOST: pnex-kusama
+      APP_PORT: 80
+
   kusama:
     container_name: kusama
     image: parity/polkadot
@@ -19,10 +24,12 @@ services:
       "--sync", "warp",
       "--prometheus-port", "${APP_KUSAMA_PORT_PROMETHEUS}"
     ]
-  node-explorer:
-    container_name: kusama-nodex
+
+  pnex-kusama:
+    container_name: pnex-kusama
     image: wirednkod13/polkadot-node-explorer
     environment:
-      - WS_URL=ws://$APP_POLKADOT_NODE_IP:9944
-    ports:
-      - 17091:80
+      - PNEX_NODE_IP=$APP_KUSAMA_NODE_IP
+      - PNEX_PROMETHEUS_PORT=9615
+      - PNEX_PROMETHEUS_METRICS=metrics
+      - PNEX_POOL_TIME=2000

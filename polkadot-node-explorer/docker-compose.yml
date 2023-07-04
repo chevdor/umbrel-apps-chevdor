@@ -1,6 +1,16 @@
 version: "3.7"
 
 services:
-  polkadot:
-    container_name: polkadot-meta
-    image: nginx
+  app_proxy:
+    environment:
+      APP_HOST: pnex
+      APP_PORT: 80
+
+  pnex:
+    container_name: pnex
+    image: wirednkod13/polkadot-node-explorer
+    environment:
+      - PNEX_NODE_IP=$APP_POLKADOT_NODE_IP
+      - PNEX_PROMETHEUS_PORT=9615
+      - PNEX_PROMETHEUS_METRICS=metrics
+      - PNEX_POOL_TIME=2000
