@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: polkadot-staking-dashboard
+name: Polkadot Staking Dashboard
+icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/icons/staking_icon.svg
+category: Polkadot
+version: "0.0.1"
+tagline: The Polkadot Staking Dashboard helps you stake and unstake your tokens.
+description: >-
+  The Polkadot Staking Dashboard helps you stake and unstake your tokens.
+developer: Chevdor
+website: https://chevdor.com
+submitter: Chevdor
+submission: https://github.com/chevdor/umbrel-apps-chevdor
+repo: https://github.com/chevdor/umbrel-apps-chevdor
+support: https://github.com/chevdor/umbrel-apps-chevdor/issues
+gallery:
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/polkadot-light.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/kusama-light.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/polkadot-dark.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/connect-dark.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/kusama-dark.png
+releaseNotes: >-
+  First experimental version
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

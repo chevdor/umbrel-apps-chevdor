@@ -1,10 +1,10 @@
 manifestVersion: 1
 id: polkadot-node-explorer
 name: Polkadot Node Explorer
-tagline: All the Umbrel Apps you need for the Polkadot Network
 icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-node-explorer/icons/pnex_512.svg
-category: Blockchain
+category: Polkadot
 version: "0.0.2"
+tagline: The Polkadot Node Explorer is a simple dashboard showing the status of a Substrate node such as Polkadot or Kusama.
 description: >-
   The Polkadot Node Explorer is a simple dashboard showing the status of a Substrate node such as Polkadot or Kusama.
 

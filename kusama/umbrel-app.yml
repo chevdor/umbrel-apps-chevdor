@@ -1,11 +1,11 @@
 manifestVersion: 1
 id: kusama
 name: Kusama
-tagline: Your very own Kusama node
 icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/kusama/icons/kusama_icon.svg
 category: Blockchain
 version: "0.0.2"
 port: 17091
+tagline: Your very own local Kusama node
 description: >-
   This is your very own Kusama node. Kusama is a relay chain and arbitrates all the parachains of the Kusama network.
   It is the canary network of the Polkadot network.
