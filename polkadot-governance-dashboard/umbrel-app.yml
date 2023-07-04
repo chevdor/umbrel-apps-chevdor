@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: polkadot-gov-dashboard
+id: polkadot-delegation-dashboard
 name: Polkadot Delegation Dashboard
 icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-delegation/icons/governance_icon.svg
 category: Polkadot
