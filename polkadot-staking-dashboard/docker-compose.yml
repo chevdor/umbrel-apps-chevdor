@@ -3,4 +3,6 @@ version: "3.7"
 services:
   polkadot:
     container_name: polkadot-staking-dashboard
-    image: nginx
+    image: docker.io/chevdor/polkadot-staking-dashboard
+    ports:
+        - 18080:80

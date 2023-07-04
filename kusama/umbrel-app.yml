@@ -2,7 +2,7 @@ manifestVersion: 1
 id: kusama
 name: Kusama
 icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/kusama/icons/kusama_icon.svg
-category: Blockchain
+category: Polkadot
 version: "0.0.2"
 port: 17091
 tagline: Your very own local Kusama node
