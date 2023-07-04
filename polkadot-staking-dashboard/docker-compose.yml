@@ -1,7 +1,13 @@
 version: "3.7"
 
 services:
-  polkadot:
+  app_proxy:
+    environment:
+      APP_HOST: polkadot_staking_dashboard_staking_dashboard_1
+      APP_PORT: 18080
+      PROXY_AUTH_WHITELIST: "/*"
+
+  staking-dashboard:
     container_name: polkadot-staking-dashboard
     image: docker.io/chevdor/polkadot-staking-dashboard
     ports:

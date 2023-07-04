@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  polkadot:
+  kusama:
     container_name: kusama
     image: parity/polkadot
     ports:

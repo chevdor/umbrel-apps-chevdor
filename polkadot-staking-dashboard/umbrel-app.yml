@@ -14,11 +14,11 @@ submission: https://github.com/chevdor/umbrel-apps-chevdor
 repo: https://github.com/chevdor/umbrel-apps-chevdor
 support: https://github.com/chevdor/umbrel-apps-chevdor/issues
 gallery:
-  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/polkadot-light.png
-  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/kusama-light.png
   - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/polkadot-dark.png
-  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/connect-dark.png
   - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/kusama-dark.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/connect-dark.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/kusama-light.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-staking/screenshots/polkadot-light.png
 releaseNotes: >-
   First experimental version
 dependencies: []

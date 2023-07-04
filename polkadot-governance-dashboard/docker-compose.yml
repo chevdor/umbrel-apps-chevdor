@@ -1,6 +1,6 @@
 version: "3.7"
 
 services:
-  polkadot:
+  gov-dashboard:
     container_name: polkadot-governance-dashboard
     image: nginx
