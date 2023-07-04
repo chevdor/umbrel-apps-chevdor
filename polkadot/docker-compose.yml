@@ -30,6 +30,5 @@ services:
     image: wirednkod13/polkadot-node-explorer
     environment:
       - PNEX_NODE_IP=$APP_POLKADOT_NODE_IP
-      - PNEX_PROMETHEUS_PORT=9615
-      - PNEX_PROMETHEUS_METRICS=metrics
+      - PNEX_PROMETHEUS_PORT=$APP_POLKADOT_PORT_PROMETHEUS
       - PNEX_POOL_TIME=2000

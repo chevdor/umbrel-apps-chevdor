@@ -1,3 +1,4 @@
+# Those are for our App
 export APP_POLKADOT_NODE_IP="10.177.0.1"
 export APP_POLKADOT_PORT_P2P=30333
 export APP_POLKADOT_PORT_RPC=9933
