@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: westend
+name: westend
+icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/westend/icons/westend_icon.svg
+category: Polkadot
+version: "0.0.2"
+port: 17091
+tagline: Your very own local westend node
+description: >-
+  This is your very own Westend node. Westend is a relay chain and arbitrates all the parachains of the Westend network.
+  It is the TEST network of the Polkadot network.
+  Installing this app, you will run a local Westend node.
+  Less Trust / More Truth !
+
+developer: Parity Technologies
+website: https://chevdor.com
+submitter: Chevdor
+submission: https://github.com/chevdor/umbrel-apps-chevdor
+repo: https://github.com/chevdor/umbrel-apps-chevdor
+support: https://github.com/chevdor/umbrel-apps-chevdor/issues
+gallery:
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/westend/screenshots/westend.png
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadot-node-explorer/screenshots/westend.png
+releaseNotes: >-
+  This version adds icons and screenshots.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

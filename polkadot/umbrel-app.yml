@@ -10,7 +10,7 @@ description: >-
   This is your very own Polkadot node. Polkadot is a relay chain and arbitrates all the parachains of the Polkadot network.
   Installing this app, you will run a local Polkadot node.
 
-developer: Chevdor
+developer: Parity Technologies
 website: https://chevdor.com
 submitter: Chevdor
 submission: https://github.com/chevdor/umbrel-apps-chevdor

@@ -8,7 +8,7 @@ tagline: The Polkadot Node Explorer is a simple dashboard showing the status of 
 description: >-
   The Polkadot Node Explorer is a simple dashboard showing the status of a Substrate node such as Polkadot or Kusama.
 
-developer: Chevdor
+developer: Parity Technologies
 website: https://chevdor.com
 submitter: Chevdor
 submission: https://github.com/chevdor/umbrel-apps-chevdor

@@ -7,7 +7,7 @@ version: "0.0.1"
 tagline: The Polkadot Staking Dashboard helps you stake and unstake your tokens.
 description: >-
   The Polkadot Staking Dashboard helps you stake and unstake your tokens.
-developer: Chevdor
+developer: Parity Technologies
 website: https://chevdor.com
 submitter: Chevdor
 submission: https://github.com/chevdor/umbrel-apps-chevdor
