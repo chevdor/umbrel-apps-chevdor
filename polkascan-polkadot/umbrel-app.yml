@@ -19,7 +19,8 @@ gallery:
   - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/screenshots/polkadot.png
 releaseNotes: >-
   Experimental version
-dependencies: []
+dependencies:
+  - polkadot
 path: ""
 defaultUsername: ""
 defaultPassword: ""
