@@ -24,7 +24,7 @@ services:
       "--prometheus-external",
       "--database", "auto",
       "--sync", "warp",
-      "--pruning=256", "--unsafe-pruning",
+      "--state-pruning=256", "--blocks-pruning=1024",
     ]
     networks:
       default:
