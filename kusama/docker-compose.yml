@@ -27,9 +27,10 @@ services:
 
   pnex-kusama:
     container_name: pnex-kusama
-    image: wirednkod13/polkadot-node-explorer
+    image: chevdor/polkadot-node-explorer
     environment:
+      - PNEX_WS_URL=ws://$APP_KUSAMA_NODE_IP:$APP_KUSAMA_PORT_WS
       - PNEX_NODE_IP=$APP_KUSAMA_NODE_IP
-      - PNEX_PROMETHEUS_PORT=9615
+      - PNEX_PROMETHEUS_PORT=$APP_KUSAMA_PORT_PROMETHEUS
       - PNEX_PROMETHEUS_METRICS=metrics
       - PNEX_POOL_TIME=2000

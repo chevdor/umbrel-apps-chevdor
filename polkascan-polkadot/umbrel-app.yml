@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: polkascan-polkadot
+name: Polkascan Polkadot
+tagline: Your very own Polkascan Block Explorer
+icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/icons/icon.svg
+category: Polkadot
+version: "0.0.1"
+port: 17090
+description: >-
+  TODO
+
+developer: Polkascan
+website: https://chevdor.com
+submitter: Chevdor
+submission: https://github.com/chevdor/umbrel-apps-chevdor
+repo: https://github.com/chevdor/umbrel-apps-chevdor
+support: https://github.com/chevdor/umbrel-apps-chevdor/issues
+gallery:
+  - https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/screenshots/polkadot.png
+releaseNotes: >-
+  Experimental version
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
