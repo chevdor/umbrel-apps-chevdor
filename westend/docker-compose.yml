@@ -13,6 +13,7 @@ services:
       - ${APP_WESTEND_PORT_P2P}:30333 # p2p port
       - ${APP_WESTEND_PORT_RPC}:9933 # rpc port
       - ${APP_WESTEND_PORT_WS}:9944 # ws port
+      - ${APP_WESTEND_PORT_PROMETHEUS}:9615 # prom port
     volumes:
       - ${APP_DATA_DIR}:/polkadot
     command: [
@@ -22,7 +23,6 @@ services:
       "--prometheus-external",
       "--database", "auto",
       "--sync", "warp",
-      "--prometheus-port", "${APP_WESTEND_PORT_PROMETHEUS}"
     ]
     networks:
       default:

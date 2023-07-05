@@ -9,10 +9,12 @@ services:
   polkadot:
     container_name: polkadot
     image: parity/polkadot
+    restart: unless-stopped
     ports:
       - ${APP_POLKADOT_PORT_P2P}:30333 # p2p port
       - ${APP_POLKADOT_PORT_RPC}:9933 # rpc port
       - ${APP_POLKADOT_PORT_WS}:9944 # ws port
+      - ${APP_POLKADOT_PORT_PROMETHEUS}:9615 # prom port
     volumes:
       -  ${APP_DATA_DIR}:/polkadot
     command: [
@@ -22,13 +24,14 @@ services:
       "--prometheus-external",
       "--database", "auto",
       "--sync", "warp",
-      "--prometheus-port", "${APP_POLKADOT_PORT_PROMETHEUS}"
     ]
     networks:
       default:
         ipv4_address: $APP_POLKADOT_NODE_IP
 
   pnex-polkadot:
+    depends_on: [polkadot]
+    restart: unless-stopped
     container_name: pnex-polkadot
     image: wirednkod13/polkadot-node-explorer
     environment:
