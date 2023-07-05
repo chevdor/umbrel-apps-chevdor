@@ -27,9 +27,10 @@ services:
 
   pnex-westend:
     container_name: pnex-westend
-    image: wirednkod13/polkadot-node-explorer
+    image: chevdor/polkadot-node-explorer
     environment:
+      - PNEX_WS_URL=ws://$APP_WESTEND_NODE_IP:$APP_WESTEND_PORT_WS
       - PNEX_NODE_IP=$APP_WESTEND_NODE_IP
-      - PNEX_PROMETHEUS_PORT=9615
+      - PNEX_PROMETHEUS_PORT=$APP_WESTEND_PORT_PROMETHEUS
       - PNEX_PROMETHEUS_METRICS=metrics
       - PNEX_POOL_TIME=2000

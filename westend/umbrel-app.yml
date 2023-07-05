@@ -1,11 +1,11 @@
 manifestVersion: 1
 id: westend
 name: westend
-icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/westend/icons/westend_icon.svg
+icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/westend/icons/westend.svg
 category: Polkadot
 version: "0.0.2"
-port: 17091
-tagline: Your very own local westend node
+port: 17092
+tagline: Your very own local Westend node
 description: >-
   This is your very own Westend node. Westend is a relay chain and arbitrates all the parachains of the Westend network.
   It is the TEST network of the Polkadot network.
