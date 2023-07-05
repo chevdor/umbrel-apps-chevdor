@@ -24,6 +24,9 @@ services:
       "--sync", "warp",
       "--prometheus-port", "${APP_WESTEND_PORT_PROMETHEUS}"
     ]
+    networks:
+      default:
+        ipv4_address: $APP_WESTEND_NODE_IP
 
   pnex-westend:
     container_name: pnex-westend
@@ -34,3 +37,6 @@ services:
       - PNEX_PROMETHEUS_PORT=$APP_WESTEND_PORT_PROMETHEUS
       - PNEX_PROMETHEUS_METRICS=metrics
       - PNEX_POOL_TIME=2000
+    networks:
+      default:
+        ipv4_address: $APP_WESTEND_NODE_IP

@@ -24,6 +24,9 @@ services:
       "--sync", "warp",
       "--prometheus-port", "${APP_POLKADOT_PORT_PROMETHEUS}"
     ]
+    networks:
+        default:
+          ipv4_address: $APP_POLKADOT_NODE_IP
 
   pnex-polkadot:
     container_name: pnex-polkadot
