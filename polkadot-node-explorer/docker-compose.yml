@@ -8,7 +8,7 @@ services:
 
   pnex:
     container_name: pnex
-    image: wirednkod13/polkadot-node-explorer
+    image: chevdor/polkadot-node-explorer
     environment:
       - PNEX_NODE_IP=$APP_POLKADOT_NODE_IP
       - PNEX_PROMETHEUS_PORT=9615
