@@ -9,6 +9,7 @@ tagline: Your very own local Polkadot node
 description: >-
   This is your very own Polkadot node. Polkadot is a relay chain and arbitrates all the parachains of the Polkadot network.
   Installing this app, you will run a local Polkadot node.
+  Plan ~250GB for the database.
 
 developer: Parity Technologies
 website: https://chevdor.com

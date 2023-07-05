@@ -5,6 +5,7 @@ services:
     environment:
       APP_HOST: pnex-westend
       APP_PORT: 80
+      PROXY_AUTH_ADD: "false"
 
   westend:
     container_name: westend
@@ -23,6 +24,7 @@ services:
       "--prometheus-external",
       "--database", "auto",
       "--sync", "warp",
+      "--pruning=256", "--unsafe-pruning",
     ]
     networks:
       default:
@@ -33,7 +35,7 @@ services:
     image: chevdor/polkadot-node-explorer
     environment:
       - PNEX_WS_URL=ws://$APP_WESTEND_NODE_IP:$APP_WESTEND_PORT_WS
-      - PNEX_NODE_IP=$APP_WESTEND_NODE_IP
+      - PNEX_NODE_IP=10.211.55.20
       - PNEX_PROMETHEUS_PORT=$APP_WESTEND_PORT_PROMETHEUS
       - PNEX_PROMETHEUS_METRICS=metrics
       - PNEX_POOL_TIME=2000

@@ -11,6 +11,7 @@ description: >-
   It is the canary network of the Polkadot network.
   Installing this app, you will run a local Kusama node.
   Less Trust / More Truth !
+  Plan ~300GB for the database.
 
 developer: Parity Technologies
 website: https://chevdor.com
