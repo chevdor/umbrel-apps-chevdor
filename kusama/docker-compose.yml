@@ -37,3 +37,6 @@ services:
       - PNEX_PROMETHEUS_PORT=$APP_KUSAMA_PORT_PROMETHEUS
       - PNEX_PROMETHEUS_METRICS=metrics
       - PNEX_POOL_TIME=2000
+    networks:
+      default:
+        ipv4_address: $APP_KUSAMA_PNEX_IP

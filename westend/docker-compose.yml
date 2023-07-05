@@ -39,4 +39,4 @@ services:
       - PNEX_POOL_TIME=2000
     networks:
       default:
-        ipv4_address: $APP_WESTEND_NODE_IP
+        ipv4_address: $APP_WESTEND_PNEX_IP
