@@ -5,7 +5,7 @@ tagline: Your very own Polkascan Block Explorer
 icon: https://raw.githubusercontent.com/paritytech/substrate-assets/master/assets/polkadotjs/icons/icon.svg
 category: Polkadot
 version: "0.0.1"
-port: 17090
+port: 17093
 description: >-
   TODO
 

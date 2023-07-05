@@ -3,20 +3,18 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: polkascan
+      APP_HOST: $APP_POLKASCAN_NODE_IP
       APP_PORT: 80
-      # PROXY_AUTH_WHITELIST: "/api/*"
 
   harvester:
-    build: harvester/.
     image: polkascan/harvester
     restart: unless-stopped
     entrypoint: /usr/src/start.sh
     ports:
-      - '9620:9616'
+      - 9620:9616
     environment:
       - DB_CONNECTION=mysql+pymysql://root:root@mysql:3306/polkascan?charset=utf8mb4
-      - SUBSTRATE_RPC_URL=ws://substrate-node:9944
+      - SUBSTRATE_RPC_URL=ws://${APP_POLKADOT_NODE_IP}:${APP_POLKADOT_PORT_WS}
 #      - SUBSTRATE_RPC_URL=ws://host.docker.internal:9944
       - NODE_TYPE=archive
       - SUBSTRATE_SS58_FORMAT=42
@@ -26,9 +24,6 @@ services:
       - substrate-node
 
   polling:
-    build:
-      context: explorer-api/.
-      dockerfile: ./docker/polling/Dockerfile
     image: polkascan/explorer-polling
     restart: unless-stopped
     command: python polling.py
@@ -49,9 +44,6 @@ services:
       - BLOCK_LIMIT_COUNT=500000
 
   api:
-    build:
-      context: explorer-api/.
-      dockerfile: ./docker/api/Dockerfile
     image: polkascan/explorer-api
     restart: unless-stopped
     command: bash -c "/usr/src/start-api.sh"
@@ -85,26 +77,24 @@ services:
       context: explorer-ui/.
     image: polkascan/explorer-ui
     restart: unless-stopped
-    ports:
-      - "8080:80"
     depends_on:
       - api
-      - substrate-node
+      # - substrate-node
 
-  substrate-node:
-    image: parity/substrate:latest
-    restart: unless-stopped
-    volumes:
-      - 'substrate-node:/substrate'
-    ports:
-      - '9944:9944'
-      - '9933:9933'
-    command: --dev --base-path /substrate/db --ws-external --rpc-cors=all --rpc-external --rpc-methods=Unsafe --no-telemetry --no-prometheus --pruning=archive
+  # substrate-node:
+  #   image: parity/substrate:latest
+  #   restart: unless-stopped
+  #   volumes:
+  #     - 'substrate-node:/substrate'
+  #   ports:
+  #     - 9944:9944
+  #     - 9933:9933
+  #   command: --dev --base-path /substrate/db --ws-external --rpc-cors=all --rpc-external --rpc-methods=Unsafe --no-telemetry --no-prometheus --pruning=archive
 
   mysql:
     image: mysql:latest
     volumes:
-      - 'mysql-data:/var/lib/mysql'
+      - ${APP_DATA_DIR}:/var/lib/mysql
     ports:
       - '33061:3306'
     environment:
